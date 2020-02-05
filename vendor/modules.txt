@@ -1,9 +1,16 @@
+# github.com/99designs/gqlgen v0.10.2
+github.com/99designs/gqlgen/complexity
+github.com/99designs/gqlgen/graphql
+github.com/99designs/gqlgen/graphql/introspection
+github.com/99designs/gqlgen/handler
 # github.com/BurntSushi/toml v0.3.1
 github.com/BurntSushi/toml
 # github.com/Masterminds/squirrel v1.1.0
 github.com/Masterminds/squirrel
 # github.com/NYTimes/gziphandler v1.1.1
 github.com/NYTimes/gziphandler
+# github.com/agnivade/levenshtein v1.0.1
+github.com/agnivade/levenshtein
 # github.com/armon/go-metrics v0.3.0
 github.com/armon/go-metrics
 # github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1
@@ -246,6 +253,14 @@ github.com/throttled/throttled
 github.com/throttled/throttled/store/memstore
 # github.com/tylerb/graceful v1.2.15
 github.com/tylerb/graceful
+# github.com/vektah/gqlparser v1.2.0
+github.com/vektah/gqlparser
+github.com/vektah/gqlparser/ast
+github.com/vektah/gqlparser/gqlerror
+github.com/vektah/gqlparser/lexer
+github.com/vektah/gqlparser/parser
+github.com/vektah/gqlparser/validator
+github.com/vektah/gqlparser/validator/rules
 # github.com/xtgo/uuid v0.0.0-20140804021211-a0b114877d4c
 github.com/xtgo/uuid
 # go.uber.org/atomic v1.5.1

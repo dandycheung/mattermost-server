@@ -1,0 +1,67 @@
+type User {
+	Id: String!
+	CreateAt: Int!
+	UpdateAt: Int!
+	DeleteAt: Int!
+	Username: String!
+	AuthData: String
+	AuthService: String!
+	Email: String!
+	EmailVerified: Boolean!
+	Nickname: String
+	FirstName: String
+	LastName: String
+	Position: String
+	Roles: String
+	AllowMarketing: Boolean!
+	LastPasswordUpdate: Int!
+	LastPictureUpdate: Int!
+	FailedAttempts: Int!
+	Locale: String!
+	MfaActive: Boolean!
+	MfaSecret: String!
+	LastActivityAt: Int!
+	IsBot: Boolean!
+	BotDescription: String
+	BotLastIconUpdate: Int
+	TermsOfServiceId: String
+	TermsOfServiceCreateAt: Int
+}
+
+type ChannelMember {
+	ChannelId: String!
+	UserId: String!
+	Roles: String!
+	LastViewedAt: Int!
+	MsgCount: Int!
+	MentionCount: Int!
+	LastUpdateAt: Int!
+	SchemeGuest: Boolean!
+	SchemeUser: Boolean!
+	SchemeAdmin: Boolean!
+	ExplicitRoles: String!
+}
+
+type Channel {
+  Id: String!
+  CreateAt: Int!
+  UpdateAt: Int
+  DeleteAt: Int
+  TeamId: String!
+  Type: String!
+  DisplayName: String!
+  Name: String!
+  Header: String
+  Purpose: String
+  LastPostAt: Int
+  TotalMsgCount: Int!
+  ExtraUpdateAt: Int
+  CreatorId: String!
+  SchemeId: String
+  GroupConstrained: Boolean
+  Members: [ChannelMember]!
+}
+
+type Query {
+  channels(teamId: String!): [Channel!]!
+}
